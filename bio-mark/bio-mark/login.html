@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu-cabecalho">
+            <a href="index.html"> Inicio </a>
+            <a href="singin.html">SignIn</a>
+        </nav>
+    </header>
+    
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="password">Senha:</label>
+          <input type="password" id="password" required>
+    
+          <button type="button" onclick="login()">Entrar</button>
+        </form>
+        <script>
+            function login() {
+              const email = document.getElementById('email').value;
+              const password = document.getElementById('password').value;
+        
+              // Adicione lógica de autenticação aqui (para fins de demonstração, apenas exibindo alerta)
+              alert(`Email: ${email}\nSenha: ${password}`);
+            }
+          </script>
+      </div>
+
+   
+
+        
+</body>
+</html>

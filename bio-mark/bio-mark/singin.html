@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu-cabecalho">
+            <a href="index.html"> Inicio </a>
+            <a href="login.html">LogIn</a>
+        </nav>
+    </header>
+    <div id="signup-container">
+        <h2>Registro</h2>
+        <form id="signup-form">
+          <label for="firstName">Nome:</label>
+          <input type="text" id="firstName" required>
+    
+          <label for="lastName">Sobrenome:</label>
+          <input type="text" id="lastName" required>
+    
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="password">Senha:</label>
+          <input type="password" id="password" required>
+    
+          <button type="button" onclick="signup()">Inscrever-se</button>
+        </form>
+      </div>
+
+      <script>
+        function signup() {
+          const firstName = document.getElementById('firstName').value;
+          const lastName = document.getElementById('lastName').value;
+          const phone = document.getElementById('phone').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+    
+          // Adicione lógica de registro aqui (para fins de demonstração, apenas exibindo alerta)
+          alert(`Nome: ${firstName} ${lastName}\nTelefone: ${phone}\nEmail: ${email}\nSenha: ${password}`);
+        }
+      </script>
+</body>
+</html>
